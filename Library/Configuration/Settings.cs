@@ -105,15 +105,6 @@ namespace Recurly.Configuration
         }
 
 
-        public void InitializeFromConfig()
-        {
-            ApiKey = Section.Current.ApiKey;
-            Subdomain = Section.Current.Subdomain;
-            PrivateKey = Section.Current.PrivateKey;
-            PageSize = Section.Current.PageSize;
-            _hasLoaded = true;
-        }
-
         public void Initialize(string apiKey, string subdomain, string privateKey = "", int pageSize = 50)
         {
             ApiKey = apiKey;
@@ -121,21 +112,6 @@ namespace Recurly.Configuration
             PrivateKey = privateKey;
             PageSize = pageSize;
             _hasLoaded = true;
-        }
-
-        public Settings()
-        {
-            _hasLoaded = false;
-            try
-            {
-                // Will try and load the settings from the config file by default so not to break existing integrations.
-                InitializeFromConfig();
-            }
-            catch
-            {
-                // We can't find the settings, silently fail.
-                System.Diagnostics.Debug.WriteLine("Recurly is unable to load settings from web/app.config.");
-            }
         }
     }
 }

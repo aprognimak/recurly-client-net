@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recurly", "Library\Recurly.csproj", "{CA094233-B9A7-4700-A70A-3401E14070B9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recurly.Test", "Test\Recurly.Test.csproj", "{A610420B-4FEB-4590-A4B4-2926B4E52F47}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recurly", "Library\Recurly.csproj", "{3AD481F8-BC03-48F8-B022-0D986C3517D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,16 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CA094233-B9A7-4700-A70A-3401E14070B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA094233-B9A7-4700-A70A-3401E14070B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA094233-B9A7-4700-A70A-3401E14070B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA094233-B9A7-4700-A70A-3401E14070B9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A610420B-4FEB-4590-A4B4-2926B4E52F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A610420B-4FEB-4590-A4B4-2926B4E52F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A610420B-4FEB-4590-A4B4-2926B4E52F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A610420B-4FEB-4590-A4B4-2926B4E52F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD481F8-BC03-48F8-B022-0D986C3517D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD481F8-BC03-48F8-B022-0D986C3517D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD481F8-BC03-48F8-B022-0D986C3517D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD481F8-BC03-48F8-B022-0D986C3517D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A46254EA-9F8A-4E38-98A6-3EF5A41DF81F}
 	EndGlobalSection
 EndGlobal

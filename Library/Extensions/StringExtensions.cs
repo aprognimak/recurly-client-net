@@ -49,7 +49,7 @@ namespace Recurly
         {
             var sanitized = source.ToPascalCase();
             if (sanitized.IsNullOrEmpty())
-                throw new ArgumentException("Cannot convert a null or empty string to an Enumeration.", "source");
+                throw new ArgumentException("Cannot convert a null or empty string to an Enumeration.", nameof(source));
 
             return (T)Enum.Parse(typeof(T), sanitized, true);
         }
@@ -105,7 +105,7 @@ namespace Recurly
         public static string EnumNameToTransportCase(this string enumName)
         {
             if(enumName.IsNullOrWhiteSpace())
-                throw new ArgumentException("enumName cannot be null or whitespace!", "enumName");
+                throw new ArgumentException("enumName cannot be null or whitespace!", nameof(enumName));
 
             var words = enumName.Split(' ');
             var result = new StringBuilder();
@@ -136,10 +136,10 @@ namespace Recurly
         public static string GetUrlFromLinkHeader(this string linkHeader, string rel)
         {
             if (linkHeader.IsNullOrEmpty())
-                throw new ArgumentNullException("linkHeader");
+                throw new ArgumentNullException(nameof(linkHeader));
 
             if(rel.IsNullOrEmpty())
-                throw new ArgumentNullException("rel");
+                throw new ArgumentNullException(nameof(rel));
 
             var regex = new Regex(string.Format("<([^>]+)>; rel=\"{0}\"", rel));
             var match = regex.Match(linkHeader);
